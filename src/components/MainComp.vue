@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div >
+    <div class="container">
      <CardComp
       v-for="(elem, index) in cards"
       :key="index"
@@ -35,5 +35,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.container {
+  height: 90vh;
+  background-color: #1e2d3b;
+  display: flex;
+  justify-content: center;
+align-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
 </style>
